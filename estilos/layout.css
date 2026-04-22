@@ -1,0 +1,79 @@
+*{ /*Toda Pagina*/
+    padding: 0;
+    margin: 0;
+
+}
+
+/*Estilo para configurar logo*/
+.logo{
+    width: 100px; /*Define a largura*/
+    height: 80px; /*Define a altura*/
+    border-radius: 50%; /*Borda arredondada*/
+}
+
+/*Formatando o cabeçalho*/
+body>header{
+    background-color: rgb(93, 217, 248);
+    color:rgb(73, 249, 255);
+    display: flex; /*Tela do conteudo*/
+    justify-content: start; /*Vai alinhar todo o conteúdo à esquerda*/
+    padding: 20px; /* Espaçamento interno dentro do conteúdo: adiciona 20px entre o espaço e o conteúdo do header*/
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 80px;
+    z-index: 1100;/*Mantém o cabeçalho acima dos outros componentes. Define a "camada" do elemento: quanto maior o valor, mais à frente (do que????)*/
+}
+header figure{
+    margin: 0 15px;
+}
+header h1{
+    margin: 0;
+    font-size: 24px;
+    color: #000000;
+}
+/*Estilos para a barra de navegação*/
+nav{
+    background-color: rgb(85, 173, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    display: block;
+    clear: both; /*Impede que elemento fique ao lado do elemento*/
+        /*pesquisar o q é*/
+    margin-top: 110px;
+    z-index: 1000;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    color: #fff;
+    margin: 0 15px;
+}
+nav ul li a{ /*<ul> (Unordered List): Cria a lista.*/ /*<li> (List Item): Define o item dentro de <ul>*/
+    color:#fff;
+    text-decoration: none;
+}
+/*Estilos para o conteúdo principal (main)*/
+main{
+    padding: 20px; /*Espaçamento interno dentro do conteúdo: adiciona 20px entre o espaço e o conteúdo do nav*/
+    text-align: center;
+    margin-top: 20px; /*Espaçamento abaixo da navegação*/
+}
+
+/*Estilos para o rodapé*/
+footer{
+    background-color: rgb(75, 204, 255);
+    color: #56cfff;
+    text-align: center;
+    padding: 30px;
+    position: relative; /*Se ajusta de acordo com o conteúdo*/
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}
